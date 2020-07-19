@@ -1,5 +1,5 @@
 FROM openjdk:8-jdk
-COPY . .
+COPY target/*.jar app.jar
 EXPOSE 8080
-ENTRYPOINT ["java","-jar","target/*.jar"]
+CMD ["java","-jar","/app.jar"]
 
